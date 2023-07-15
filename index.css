@@ -1,0 +1,533 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li,a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color:black;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    margin: 0px;
+    border-radius: 37px;
+    background-color: #f0f0f0;
+    padding: 10px 20px; /* Adjust padding as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 2px;
+    top: 33px;
+    box-shadow:   -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;  
+}
+
+.logo-container {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.logo-container img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 270px;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.shop-now {
+    background-color: rgb(255, 38, 0);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 17px;
+    transition: all 0.2s ease-in-out;
+    animation: glow 1s infinite linear;   
+}
+/*
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.5),
+        0 0 0 0.4rem rgba(255, 255, 255, 0.2),
+        0 0 0 0.6rem rgba(255, 255, 255, 0.1);
+    }
+  
+    50% {
+      box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.5),
+        0 0 0 1.4rem rgba(255, 255, 255, 0.2),
+        0 0 0 1.8rem rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.5),
+        0 0 0 0.4rem rgba(255, 255, 255, 0.2),
+        0 0 0 0.6rem rgba(255, 255, 255, 0.1);
+    }
+  }*/
+
+#home {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+.shop-now:hover {
+    background-color: rgb(0, 165, 41);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Tangerine:wght@700&display=swap');
+#about {
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Tangerine', cursive;
+    font-weight: 1100px;
+    font-size: 43px;
+    color: black;
+    margin: 0px;
+    position: relative;
+    bottom:23px;
+}
+#about-us {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 43px;
+}
+.about-us {
+    text-align: center;
+  }
+  
+#our-story {
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Tangerine', cursive;
+    font-weight: 1100px;
+    font-size: 43px;
+    color: black;
+    position: absolute;
+    left:940px;
+    margin-top: 40px;
+}
+.description {
+    float: right;
+    width: 42%;
+    text-align: justify;
+    position:absolute;
+    top: 185px;
+    left: 730px;
+
+    margin: 0px;
+    
+}
+#about-image {
+    width: 573px;
+    height:473px;
+    border-radius: 35px;
+    position: absolute;
+    right: 723px;
+}
+
+#our-service-header {
+   font-family: 'Great Vibes', cursive;
+   font-family: 'Kaushan Script', cursive;
+   font-family: 'Tangerine', cursive;
+   font-weight: 1100px;
+   font-size: 43px;
+   color: black;
+}
+#services {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 523px;
+    position: relative;
+    top: 7px;
+  }
+  
+  h2.text-center.text-bold {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .card {
+    margin: 10px 0;
+    position: relative;
+    top: 32px;
+
+  }
+
+.all-services-image {
+  width:823px;
+  height: 483px;
+  border-radius: 30px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  bottom: 19px;
+}
+.service-list-heading {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 43px;
+  color: black;
+}
+.text-with-heading {
+  position: relative;
+  bottom: 20px;
+}
+
+
+.recipe-tips {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top:35px;
+}
+
+#recipe-tips-style {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 43px;
+  color: black;
+  position: relative;
+  left: 653px;
+  top: 90px;
+}
+
+.tip {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recipe-tips-paragraph {
+  word-wrap: break-word;
+  width: 600px;
+  text-align: justify;
+  position: relative;
+  top: 20px;
+  right: 100px;
+}
+.tip-gif {
+  width: 270px;
+  height: 420px;
+  position: relative;
+  left: 123px;
+}
+.image-section-1 {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#left-paragraph-1 {
+  word-wrap: break-word;
+  width: 400px;
+  text-align: justify;
+  position: relative;
+  left: 210px;
+  top: 23px;
+}
+
+#right-image-1 {
+  padding: 0px;
+  margin: 0px;
+  height: 521px;
+  position: relative;
+  left:450px;
+  top: 123px; /* Adjust the margin as per your preference */
+}
+
+
+.image-section-2 {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#right-paragraph-2 {
+  word-wrap: break-word;
+  width: 400px;
+  text-align: justify;
+  position: relative;
+  left: 430px;
+  top:73px;
+}
+
+#left-image-2 {
+  padding: 0px;
+  margin: 0px;
+  height: 480px;
+  position: relative;
+  left:210px;
+  bottom:100px; /* Adjust the margin as per your preference */
+}
+
+.image-section-3 {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#left-paragraph-3 {
+  word-wrap: break-word;
+  width: 400px;
+  text-align: justify;
+  position: relative;
+  left: 210px;
+  bottom: 133px;
+}
+
+#right-image-3 {
+  padding: 0px;
+  margin: 0px;
+  height: 621px;
+  position: relative;
+  left:420px;
+  bottom:40px; /* Adjust the margin as per your preference */
+}
+
+#gallery-home {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 43px;
+  color: black;
+  position: relative;
+  bottom: 60px;
+}
+.cards {
+  display: flex;
+  justify-content: center; 
+}
+
+.card1 {
+  width: 400px;
+  height: 400px;
+  margin: 10px; 
+}
+
+.card1 img {
+  box-shadow:   -3px -3px 7px #ffffff,
+  3px 3px 5px #ceced1;
+  border-radius: 52px;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery-2 {
+  position: relative;
+  bottom: 40px;
+}
+#gallery-3 {
+  position: relative;
+  bottom: 90px;
+}
+#gallery-4 {
+  position: relative;
+  bottom: 150px;
+}
+
+
+#follow-us-heading {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 43px;
+  color: black;
+}
+/*
+.contact-info {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 26px;
+  color: black;
+}*/
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+ .social-media-icons a:nth-child(1)
+{
+    padding: 10px; 
+    color: #e1306c;
+    position: relative;
+    bottom: 9px;
+
+}
+.social-media-icons a:nth-child(2)
+{   
+    padding: 10px; 
+    color: #0097e6;
+    position: relative;
+    bottom: 9px;
+}
+.social-media-icons a:nth-child(3)
+{   
+    padding: 10px; 
+    color: #4267b2;
+    position: relative;
+    bottom: 9px;
+}
+.social-media-icons  a:nth-child(4)
+{   
+    padding: 10px; 
+    color: #e84118;
+    position: relative;
+    bottom: 9px;
+}
+.follow-us h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.social-media-icons {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.footer-1 {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+    position: relative;
+  top:80px;
+
+  
+}
+
+.contact-info p {
+  margin: 5px 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #e2e2e2;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 112px 112px 0px 0px;
+  box-shadow:   -3px -3px 7px #ffffff,
+  3px 3px 5px #ceced1;
+}
+
+.footer > div {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer > div {
+    flex: 0 0 30%;
+  }
+}
+
+.copyright {
+  position: relative;
+  top:110px;
+  right:450px;
+  font-size: 13px;
+}
+#footer-logo {
+  width: 153px;
+  height: 163px;
+}
+#miracle-text {
+  position: relative;
+  bottom: 63px;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 43px;
+  color: black;
+}
+#header-logo {
+  width: 125px;
+  height: 130px;
+  position: relative;
+  bottom: 53px;
+}
+#header-heading {
+  position: absolute;
+  bottom: 564px;
+  left: 92px;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: 1100px;
+  font-size: 30px;
+  color: black;
+}

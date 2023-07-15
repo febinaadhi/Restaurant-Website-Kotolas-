@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Miracle Flavors </title>
+     
+    <!--font awsome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body style="  overflow-x: hidden;">
+
+  <style>
+    /* Define the container for the slider */
+    .slider-container {
+      margin: 0px;
+      padding: 0px;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: relative;
+      bottom:103px;
+  
+    }
+    /* Define the individual images in the slider */
+    .slider-image {
+      margin: 0px;
+      padding: 0px;
+      max-width: 100%;
+      max-height: 100%;
+      width: 95%;
+      height: 95%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+      border-radius:50px;
+      box-shadow:   -3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1;
+   
+    }
+    
+    /* Apply the animation to the slider images */
+    .slider-image.active {
+      opacity: 1;
+    }
+    
+  
+    @keyframes imageAnimation {
+      0% {
+        opacity: 0;
+      }
+      8% {
+        opacity: 1;
+      }
+      92% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+
+/* Define the welcome message */
+    .slider-text-container {
+      position: absolute;
+      top: 195px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+    }
+    
+
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@700&display=swap');
+
+
+    .slider-text {
+      font-family: 'Great Vibes', cursive;
+      font-family: 'Tangerine', cursive;
+      color: #ffffff;
+      font-size: 70px;
+      font-weight: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Define the description text */
+    .slider-description {
+      margin-top: 10px;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: 120px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      position: relative;
+      bottom: 30px;
+    }
+    
+    /* Learn More button */
+    .learn-more-btn {
+      position: absolute;
+      bottom: -50px;
+      left: 30%;
+      transform: translateX(-50%);
+      display: block;
+      width: 200px;
+      padding: 10px 20px;
+      background-color: rgb(0, 165, 41);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 17px;
+      font-size: 16px;
+      outline: none;
+      cursor: pointer;
+      animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.learn-more-btn:hover {
+  background-color: rgb(255, 115, 0);
+}
+  </style>
+
+    <!-- Header -->
+    <header >
+         <!-- Logo -->
+         <div class="logo-container">
+        </div>
+        <nav>
+            <ul >
+                <li><a href="index.html" style="  color: rgb(0, 0, 0);">Home</a></li>
+                <li><a href="about.html" style="  color: rgb(0, 0, 0);">About</a></li>
+                <li><a href="product.html" style="  color: rgb(0, 0, 0);">Products</a></li>
+                <li><a href="recipe.html" style="  color: rgb(0, 0, 0);">Recipes</a></li>
+                <li><a href="contact.html" style="  color: rgb(0, 0, 0);">Contact</a></li>
+                <li><a href="privacy.html" style="  color: rgb(0, 0, 0);">Privacy Policy</a></li>
+            </ul>
+        </nav>
+         <!-- Shop Now Button -->
+         <a href="product.html" class="shop-now">Shop Now</a>
+    </header>
+    <img src="/image/6.png"alt="fhgh"id="header-logo">
+    <!-- Hero Section -->
+    <section id="home">
+
+        <div class="slider-container">
+        
+          <!-- Define the individual images -->
+          <img class="slider-image active" src="/slide-image/6.jpg" alt="Image 7">
+          <img class="slider-image " src="/slide-image/5.jpg" alt="Image 6">
+          <img class="slider-image" src="/slide-image/7.jpg" alt="Image 8">      
+          <img class="slider-image" src="/slide-image/13.jpg" alt="Image 7">
+          <img class="slider-image" src="/slide-image/2.jpg" alt="Image 6">
+          <img class="slider-image" src="/slide-image/11.jpg" alt="Image 7">
+          <img class="slider-image" src="/slide-image/4.jpg" alt="Image 8">
+          <img class="slider-image" src="/slide-image/8.jpg" alt="Image 6">
+          <img class="slider-image" src="/slide-image/1.jpg" alt="Image 1">
+          <img class="slider-image" src="/slide-image/9.jpg" alt="Image 7">
+          <img class="slider-image" src="/slide-image/13.jpg" alt="Image 7">
+          <img class="slider-image" src="/slide-image/10.jpg" alt="Image 8">
+          <img class="slider-image" src="/slide-image/12.jpg" alt="Image 8">
+          <img class="slider-image" src="/slide-image/2.jpg" alt="Image 6">
+          <img class="slider-image" src="/slide-image/12.jpg" alt="Image 8"> 
+
+          <div class="slider-text-container">
+
+            <div class="slider-text">
+               Miracle Flavors
+            </div>
+            <div class="slider-description">
+              Explore our delicious range of flavors.Taste the magic of miracle fruit!<br>
+              A berry that makes sour foods taste sweet.
+            </div>
+            <a href="/about.html" class="learn-more-btn">Learn More</a>
+          </div> 
+
+        </div>
+   
+    </section>
+
+    <h1 id="header-heading">Miracle Flavors</h1>
+
+
+<!-- About Section -->
+<section id="about-us">
+  <div class="about-us">
+    <h1 id="about">About Us</h1>
+    <img src="/about-image/2 (1).jpg"alt="About Us" style="float: left;"id="about-image">
+    <h1 id="our-story">Our Story</h1>
+    <p class="description">
+      A family-owned and operated dehydrated food business with over 20 years of experience, specializes in providing high-quality dehydrated food products. Made with the finest ingredients and using a slow-drying process, these products preserve nutrients and flavor. They offer a wide variety of dehydrated fruits, vegetables, spices, and herbs for use in various dishes, including soups, stews, chili, curries, trail mix, granola, and snacks. The company offers a satisfaction guarantee on all products and is available to answer any questions. The products include dehydrated fruits like apples, bananas, berries, pineapple, mango, vegetables, leaves, spices, and other powders. The website offers various recipes, including dehydrated fruit salad, vegetable soup, chili, curry, and trail mix. </p>
+  </div>
+</section>
+
+   
+
+<section id="services">
+  <h2 class="text-center text-bold"id="our-service-header">Our Services</h2>
+  <div class="services">
+
+    <div class="card">
+      <img src="/service-image/2.jpg" alt="Catering" class="card-img-top all-services-image"id="catering-image">
+      <span class="text-with-heading">
+      <div class="card-header">
+        <center><h3 class="service-list-heading">Catering</h3></center>
+      </div>
+      <div class="card-body">
+        <p>We offer catering services for all occasions.
+           Our catering menu includes a variety of dehydrated food dishes, as well as fresh fruits and vegetables.
+           We can cater to any size event, from a small gathering to a large corporate function.</p>
+      </div>
+      </span>
+    </div>
+
+    <div class="card">
+      <img src="/service-image/1 (6).jpg" alt="Delivery" class="card-img-top all-services-image"id="catering-image">
+      <span class="text-with-heading">
+      <div class="card-header">
+        <center><h3 class="service-list-heading">Delivery</h3></center>
+      </div>
+      <div class="card-body">
+        <p>We offer delivery of our dehydrated food products to your home or office.
+          We deliver to all areas of the city.
+      Our delivery service is fast and reliable.</p>
+      </div>
+      </span>
+    </div>
+
+    <div class="card">
+      <img src="/service-image/2 (1).jpg" alt="Sales" class="card-img-top all-services-image"id="">
+      <span class="text-with-heading">
+      <div class="card-header">
+        <center><h3 class="service-list-heading">Sales</h3></center>
+      </div>
+      <div class="card-body">
+        <p>We sell our dehydrated food products online and in stores.
+        Our online store is easy to use and secure.
+        We also sell our products in select stores in the city.</p>
+      </div>
+      </span>
+    </div>
+
+    <div class="card">
+      <img src="/service-image/5 (2).jpg" alt="Customer Service" class="card-img-top all-services-image"id="catering-image">
+      <span class="text-with-heading">
+      <div class="card-header">
+        <center><h3 class="service-list-heading">Customer Service</h3></center>
+      </div>
+      <div class="card-body">
+        <p>We offer excellent customer service.
+        We are always available to answer your questions and address your concerns.
+        We are committed to providing you with a positive shopping experience.</p>
+      </div>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="recipe-tips">
+  <h2 id="recipe-tips-style">Our Recipe Tips</h2>
+  <p class="tip">
+    <img src="/video/1-1--unscreen.gif" alt="A person reading a recipe book" class="tip-gif" />
+    <span class="recipe-tips-paragraph">  
+    Read the recipe thoroughly before you start cooking. This will make it easier for you to understand how the process works and allow you to make sure you have all the necessary components.
+    When measuring your ingredients, proceed with caution. For baking recipes, this is essential because even little changes in the quantity of an ingredient can have a big impact on the final product.
+    To the letter, adhere to the recipe's instructions. Even though it might appear easy, it's important to be precise when cooking, especially if you're a novice.
+    Try new things without being afraid to fail. Try experimenting with changing the ingredients or the cooking method if a dish doesn't turn out as you had hoped. You might be surprised by what you can produce!
+    You can choose from a wide selection of recipes, thus
+    </span>
+  </p>
+</section>
+
+
+
+<section class="image-section-1">
+  <p id="left-paragraph-1">Welcome to our restaurant, where we celebrate the incredible flavors and benefits of dehydrated leaves. From the vibrant and aromatic curry leaves to the refreshing essence of mint and the nutritional powerhouse of moringa, we bring you a unique culinary experience like no other. Our expert chefs have mastered the art of utilizing these dehydrated leaves to enhance the taste, texture, and nutritional value of our dishes.</p>
+  <img id="right-image-1" src="/video/3 (5).png" alt="Image">
+</section>
+
+
+<section class="image-section-2">
+  <img id="left-image-2" src="/video/3 (2).png" alt="Image">
+  <p id="right-paragraph-2">where we take pride in serving you the finest dehydrated cuisine. Our dehydrated food is a testament to culinary innovation and sustainability. We have perfected the art of preserving the natural flavors and nutrients of fresh ingredients through a meticulous dehydration process. Every dish on our menu is a carefully crafted dehydrated recipe, designed to tantalize your taste buds and provide a unique dining experience. </p>
+</section>
+
+
+<section class="image-section-3">
+  <p id="left-paragraph-3">where we specialize in offering a unique and delicious dining experience centered around our dehydrated food and exquisite dehydrated recipes. Our culinary experts have crafted a menu that showcases the remarkable flavors and textures of dehydrated ingredients, including the finest jackfruit powder, tapioca powder, and arrowroot powder.Discover the art of dehydration and experience a truly exceptional dining experience that will leave you craving more.</p>
+  <img id="right-image-3" src="/video/4 (1).png" alt="Image">
+</section>
+
+
+<section id="gallery-1">
+  
+    <center><h1 id="gallery-home">Gallery</h1></center>
+    <div class="cards">
+      <div class="card1">
+        <img src="/galary-image/1.jpg" alt="Card 1">
+      </div>
+      <div class="card1">
+        <img src="/galary-image/2.jpg" alt="Card 2">
+      </div>
+      <div class="card1">
+        <img src="/galary-image/3.jpg" alt="Card 3">
+      </div>
+      <div class="card1">
+        <img src="/galary-image/4.jpg" alt="Card 4">
+      </div>
+    </div>
+  
+</section>
+
+<section id="gallery-2">
+  
+  <div class="cards">
+    <div class="card1">
+      <img src="/galary-image/5.jpg" alt="Card 1">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/7.jpg" alt="Card 2">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/6.jpg" alt="Card 3">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/8.jpg" alt="Card 4">
+    </div>
+  </div>
+
+</section>
+
+<section id="gallery-3">
+  
+  <div class="cards">
+    <div class="card1">
+      <img src="/galary-image/9.jpg" alt="Card 1">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/10.jpg" alt="Card 2">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/11.jpg" alt="Card 3">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/12.jpg" alt="Card 4">
+    </div>
+  </div>
+</section>
+
+<section id="gallery-4">
+  <div class="cards">
+    <div class="card1">
+      <img src="/galary-image/13.jpg" alt="Card 1">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/14.jpg" alt="Card 2">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/17.jpg" alt="Card 3">
+    </div>
+    <div class="card1">
+      <img src="/galary-image/16.jpg" alt="Card 4">
+    </div>
+  </div>
+</section>
+
+
+<section class="footer">
+  <div class="logo">
+    <img src="/image/6.png" alt="Logo" id="footer-logo">
+    <h1 id="miracle-text">Miracle Flavors</h1>
+  </div>
+  <div class="follow-us">
+    <h1 id="follow-us-heading">Follow Us</h1>
+    <ul class="social-media-icons">
+      <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+     <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+     <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+     <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </ul>
+  </div>
+  <div class="navigation">
+    <ul class="footer-links">
+      <span class="footer-1">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Products</a></li><br><br>
+      <li><a href="recipe.html">Recipes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="product.html">Shop Now</a></li><br><br>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="about.html">Our Services</a></li>
+      <li><a href="privacy.html">privacy</a></li>
+      </span>
+    </ul>
+  </div>
+  <div class="contact-info">
+    <p>Phone: +919207534792</p>
+    <p>Email: info@example.com</p>
+    <p>Location: Nilambur Street, Malappuram, India</p>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2023 Miracle Flavors. All rights reserved.</p>
+  </div>
+</section>
+</body>
+
+</html>
